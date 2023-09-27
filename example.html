@@ -1,4 +1,86 @@
+<!DOCTYPE html>
 <html>
-<h1>Example</h1>
+
+<head>
+	<style>
+		.main {
+			background-color: #f0f0f0;
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			min-height: 100vh;
+		}
+
+		.title {
+			font-size: 25px;
+			color: black;
+			margin: 20px;
+			text-align: center;
+		}
+
+		.form-container {
+			text-align: center;
+		}
+
+		.form-input {
+			width: 300px;
+			height: 40px;
+			font-size: 15px;
+			padding: 5px;
+
+
+		}
+
+		.signin-button {
+			padding: 10px 20px;
+			width: 300px;
+			height: 50px;
+			border-radius: 10px;
+			background-color: #007bff;
+			color: white;
+			border: none;
+			font-size: 20px;
+			cursor: pointer;
+			margin: 10px;
+		}
+
+		.etc {
+			color: gray;
+			font-size: 15px;
+			text-align: center;
+		}
+
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+	</style>
+</head>
+
+<body class="main">
+
+	<div style="text-align: center;">
+		<img src="https://brandslogos.com/wp-content/uploads/images/large/bootstrap-logo.png" alt="bootstrap"
+			width="70px">
+		<p class="title">Please sign in</p>
+
+		<div class="form-container">
+			<input type="text" class="form-input" placeholder="Email address">
+			<br>
+			<input type="password" class="form-input" placeholder="Password">
+
+		</div>
+
+		<div style="display: flex;">
+			<input type="checkbox">
+			<p style="font-size:15px;">Remember me</p>
+		</div>
+		<button type="signin" class="signin-button">Sign in</button>
+		<p class="etc">© 2017-2022</p>
+	</div>
+
+</body>
 
 </html>
