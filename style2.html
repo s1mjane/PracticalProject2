@@ -1,50 +1,93 @@
 <html>
 
 <head>
+	<style>
+		.main {
+			margin: 20px;
+			background-color: tomato;
+			color: white;
+
+		}
+
+		.body {
+			background-color: white;
+			color: tomato;
+			padding: 10px;
+			display: flex;
+		}
+
+		.sheet {
+			width: 300px;
+		}
+
+		.menu {
+			background-color: tomato;
+			border-radius: 20px;
+			color: white;
+			font-size: 20px;
+			width: 150px;
+			height: 20px;
+			padding: 5px;
+			text-align: center;
+		}
+
+		.sidebar {
+			background-color: lightpink;
+			color: tomato;
+			padding: 10px;
+			margin: 0px;
+		}
+	</style>
+
 </head>
 
-<body>
+<body class="main">
 	<div>
-		<h1>Welcome to 심재인's Homepage (21900412)</h1>
-		<p>Use the menu to select different Stylesheets</p>
+		<h1 style="font-size:50px;">Welcome to 심재인's Homepage (21900412)</h1>
+		<p style="font-size:25px;">Use the menu to select different Stylesheets</p>
 	</div>
-	<div>
-		<p> Sytlesheet1</p>
-		<p> Sytlesheet2</p>
-		<p> Sytlesheet3</p>
-		<p> Sytlesheet4</p>
-		<p> No Stylesheet</p>
-	</div>
-	<div>
-		<h1>Same Page Different Stylesheets</h1>
-		<p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change
-			the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following
-			links:
-			<br>
-			<a href="https://pp2s1mjane.netlify.app/style1">Stylesheet1</a>, <a
-				href="https://pp2s1mjane.netlify.app/style2">Stylesheet2</a>, Stylesheet3, Stylesheet4.
-		</p>
+	<div class="body">
 
-	</div>
-	<div>
-		<h2>No Styles</h2>
-		<p>No Styles
-			This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
-			looks like with
-			no stylesheet:
-			<br>
-			<a href="https://pp2s1mjane.netlify.app/nostyle">No Stylesheet.</a>
-		</p>
-	</div>
+		<div>
+			<h1>Same Page Different Stylesheets</h1>
+			<p style="color:black;">This is a demonstration of how different stylesheets can change the layout of your
+				HTML page. You can
+				change
+				the layout of this page by selecting different stylesheets in the menu, or by selecting one of the
+				following
+				links:
+				<br>
+				<a href="https://pp2s1mjane.netlify.app/style1">Stylesheet1</a>, <a
+					href="https://pp2s1mjane.netlify.app/style2">Stylesheet2</a>, Stylesheet3, Stylesheet4.
+			</p>
+			<h2>No Styles</h2>
+			<p style="color:black">This page uses DIV elements to group different sections of the HTML page. Click here
+				to see how the page
+				looks like with
+				no stylesheet:
+				<br>
+				<a href="https://pp2s1mjane.netlify.app/nostyle">No Stylesheet.</a>
+			</p>
 
-	<div>
+		</div>
+		<div class="sheet">
+			<p class="menu"> Sytlesheet1</p>
+			<p class="menu"> Sytlesheet2</p>
+			<p class="menu"> Sytlesheet3</p>
+			<p class="menu"> Sytlesheet4</p>
+			<p class="menu">No Stylesheet</p>
+		</div>
+	</div>
+	<div class="sidebar">
 		<h3>Side-Bar</h3>
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+			laoreet
 			dolore
 			magna aliquam erat volutpat.</p>
 	</div>
+
 	<div>
-		<p>
+		<p style="text-align:center;font-size:11px;">
 			Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
 			dolore
 			magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
