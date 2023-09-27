@@ -1,15 +1,31 @@
 <form>
-	<!-- text -->
-	<label for="fname">First name:</label><br>
-	<input type="text" id="fname" name="fname"><br>
-	<label for="lname">Last name:</label><br>
-	<input type="text" id="lname" name="lname"><br><br>
+	<!-- fieldset -->
+	<fieldset>
+		<!-- legend -->
+		<legend>Personal Info:</legend>
+		<!-- text -->
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" name="fname" value="Jane"><br>
+		<label for="lname">Last name:</label><br>
+		<input type="text" id="lname" name="lname" value="Sim">
+		<br><br>
 
-	<!-- date -->
-	<form>
+		<!-- date -->
 		<label for="birthday">Birthday:</label>
 		<input type="date" id="birthday" name="birthday">
-	</form><br><br>
+		<br><br>
+
+		<!-- color -->
+		<label for="favcolor">My favorite color:</label>
+		<input type="color" id="favcolor" name="favcolor">
+
+	</fieldset>
+
+	<!-- textarea -->
+	<textarea name="message" rows="5" cols="30">
+		My name is Jane! Nice to meet you!
+	</textarea>
+	<br><br>
 
 	<!-- radio -->
 	<input type="radio" id="html" name="fav_language" value="HTML">
@@ -17,71 +33,67 @@
 	<input type="radio" id="css" name="fav_language" value="CSS">
 	<label for="css">CSS</label><br>
 	<input type="radio" id="javascript" name="fav_language" value="JavaScript">
-	<label for="javascript">JavaScript</label><br><br>
+	<label for="javascript">JavaScript</label>
+	<br><br>
 
 	<!-- checkbox -->
-	<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-	<label for="vehicle1"> I have a bike</label><br>
-	<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-	<label for="vehicle2"> I have a car</label><br>
-	<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-	<label for="vehicle3"> I have a boat</label><br><br>
+	<input type="checkbox" id="html" name="html" value="HTML">
+	<label for="html"> I used HTML</label><br>
+	<input type="checkbox" id="css" name="css" value="CSS">
+	<label for="css"> I used CSS</label><br>
+	<input type="checkbox" id="javascript" name="javascript" value="JavaScript">
+	<label for="javascript"> I used JavaScript</label>
+	<br><br>
 
 	<!-- select -->
-	<label for="cars">Choose a car:</label>
-	<select id="cars" name="cars">
-		<option value="volvo">Volvo</option>
-		<option value="saab">Saab</option>
-		<option value="fiat">Fiat</option>
-		<option value="audi">Audi</option>
-	</select><br><br>
-
-	<!-- textarea -->
-	<textarea name="message" rows="10" cols="30">
-		The cat was playing in the garden.
-	</textarea>
-
-	<!-- fieldset and legend -->
-	<form action="/action_page.php">
-		<fieldset>
-			<legend>Personalia:</legend>
-			<label for="fname">First name:</label><br>
-			<input type="text" id="fname" name="fname" value="John"><br>
-			<label for="lname">Last name:</label><br>
-			<input type="text" id="lname" name="lname" value="Doe"><br><br>
-			<input type="submit" value="Submit">
-		</fieldset>
-	</form>
-
-	<!-- optgroup -->
-	<label for="cars">Choose a car:</label>
-	<select name="cars" id="cars">
-		<optgroup label="Swedish Cars">
-			<option value="volvo">Volvo</option>
-			<option value="saab">Saab</option>
+	<label for="pets">Choose a pet:</label>
+	<select name="pets" id="pets">
+		<option value="default"> Select a pet </option>
+		<!-- optgroup -->
+		<optgroup label="Mammals">
+			<option value="cat">Cat</option>
+			<option value="dog">Dog</option>
 		</optgroup>
-		<optgroup label="German Cars">
-			<option value="mercedes">Mercedes</option>
-			<option value="audi">Audi</option>
+		<optgroup label="Reptiles">
+			<option value="lizard">Lizard</option>
+			<option value="snake">Snake</option>
 		</optgroup>
 	</select>
+	<br><br>
 
-	<!-- color -->
-	<form>
-		<label for="favcolor">Select your favorite color:</label>
-		<input type="color" id="favcolor" name="favcolor">
-	</form>
+	<img id="petImage" src="" alt="Selected Pet Image" width="100px">
+	<br><br>
 
+	<!-- datalist -->
+	<input list="browsers">
+	<datalist id="browsers">
+		<option value="Internet Explorer">
+		<option value="Firefox">
+		<option value="Chrome">
+		<option value="Opera">
+		<option value="Safari">
+	</datalist>
+	<br><br>
 
-	<form action="/action_page.php">
-		<input list="browsers">
-		<datalist id="browsers">
-			<option value="Internet Explorer">
-			<option value="Firefox">
-			<option value="Chrome">
-			<option value="Opera">
-			<option value="Safari">
-		</datalist>
-	</form>
 
 </form>
+
+
+<script>
+	var select = document.getElementById("pets");
+	var petImage = document.getElementById("petImage");
+
+	select.addEventListener("change", function () {
+		var selectedValue = select.value;
+
+		var imageUrls = {
+			default: "https://img.freepik.com/premium-vector/white-texture-round-striped-surface_547648-4509.jpg?w=2000",
+			cat: "https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg",
+			dog: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*",
+			lizard: "https://www.worldanimalprotection.us/sites/default/files/styles/600x400/public/media/GettyImages-521447418.jpg?h=c5728f21&itok=YNJJJJAn",
+			snake: "https://static.toiimg.com/photo/imgsize-75412,msid-101143981/101143981.jpg"
+		};
+
+		petImage.src = imageUrls[selectedValue] || imageUrls.default;
+	});
+</script>
