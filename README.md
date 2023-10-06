@@ -1,6 +1,8 @@
 ### PracticalProject2
 Front-end Development <br> <br>
 
+netlify URL :  https://pp2s1mjane.netlify.app <br>
+
 ## 🧸 index.html
 <img width="288" alt="index" src="https://github.com/s1mjane/ossTeam/assets/100616572/09c01936-20bc-4954-a5fd-fb9b4115584c"> <br><br>
 ## 🧸 example.html
@@ -12,6 +14,7 @@ Front-end Development <br> <br>
 ## 🧸 style2.html
 <img width="1431" alt="style2" src="https://github.com/s1mjane/ossTeam/assets/100616572/58d286bf-eb8a-4e2b-9782-9c25c910b0d3"> <br><br>
 ## 🧸 form.html
+form.html 사용 태그 : text, radio, checkbox, select, date, textarea<br><br>
 <img width="337" alt="form" src="https://github.com/s1mjane/ossTeam/assets/100616572/0e72d4cc-136d-42c7-982e-d89a26cbd854"> <br><br>
 
 
