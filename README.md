@@ -1,7 +1,6 @@
 ### PracticalProject2
-Front-end Development <br> <br>
-
-netlify URL :  https://pp2s1mjane.netlify.app <br>
+Front-end Development <br> 
+#### netlify URL :  https://pp2s1mjane.netlify.app <br><br>
 
 ## 🧸 index.html
 <img width="288" alt="index" src="https://github.com/s1mjane/ossTeam/assets/100616572/09c01936-20bc-4954-a5fd-fb9b4115584c"> <br><br>
